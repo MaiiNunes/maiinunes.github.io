@@ -12,7 +12,6 @@ a{
 .flex-container{
     display: flex;
     align-items: center;
-    max-width: 75%;
     min-width: 320px;
     min-height: 100vh;
     width: 100%; 
@@ -208,8 +207,14 @@ footer.dark-mode {
 /* mobile */
 @media(max-width:992px){
     aside main{
-      max-width: 90%;
-      margin: 65px 50px;
-      width: 100%;
+        align-items: center;
+        max-width: 90%;
+        margin: 65px 50px;
+        width: 100%;
     }
-  }
+
+    .flex-container{
+        align-items: center;
+        justify-content: space-around
+    }
+}
