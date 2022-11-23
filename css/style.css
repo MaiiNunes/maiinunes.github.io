@@ -11,7 +11,7 @@ a{
 
 .flex-container{
     display: flex;
-    align-items: center;
+    flex-basis: auto;
     min-width: 320px;
     min-height: 100vh;
     width: 100%; 
@@ -93,6 +93,8 @@ button.dark-mode:hover {
 
 
 aside, main{
+    display: flex;
+    flex-direction: column;
     color: #141124f1;
     margin: 70px 15px;
     height: 93vh;
@@ -124,6 +126,9 @@ h3{
     text-decoration: underline .5px;
     text-shadow: 1px 1px 1px #9782fd9f;
 }
+.contacts{
+    padding-left:20px;
+}
 
 .table{
     display: flex;
@@ -145,6 +150,11 @@ h3{
 }
 .btn-aside:hover {
 	background-color: #bbcef7;
+}
+
+.ul-aside{
+    list-style: none;
+    padding-left: 15px;
 }
 
 main{
@@ -210,23 +220,3 @@ footer.dark-mode {
 }
 
 
-/* mobile */
-@media(max-width:992px){
-    aside main{
-        align-items: center;
-        max-width: 100%;
-        margin: 65px 50px;
-        width: 100%;
-    }
-
-    .flex-container{
-        align-items: center;
-        justify-content: space-around
-    }
-
-    .table{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-}
