@@ -45,7 +45,7 @@ nav{
     justify-content: space-between;    
 }
 .logo{
-    padding: .8px 0 .1px 20px;
+    padding: 1px 0 .5px 20px;
 }
 
 ul{
@@ -125,16 +125,22 @@ h3{
     text-shadow: 1px 1px 1px #9782fd9f;
 }
 
+.table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .btn-aside{
     line-height: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     background:#aec2fd;
     padding: 5px 15px;
     height: 30px;
-	width: 150px; 
-    gap: 5px;
+	width: 150x; 
+    gap: 3px;
     color: #141124f8;
 }
 .btn-aside:hover {
@@ -208,7 +214,7 @@ footer.dark-mode {
 @media(max-width:992px){
     aside main{
         align-items: center;
-        max-width: 90%;
+        max-width: 100%;
         margin: 65px 50px;
         width: 100%;
     }
@@ -217,4 +223,9 @@ footer.dark-mode {
         align-items: center;
         justify-content: space-around
     }
+
+    .table{
+        flex-wrap: wrap;
+    }
+    
 }
