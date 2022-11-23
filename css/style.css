@@ -48,7 +48,7 @@ nav{
     padding: 1px 0 .5px 20px;
 }
 
-ul{
+.ul-nav{
     position: relative;
     color: #D6C2FF;
     text-shadow: 2px 3px 3px #301b55;
@@ -225,6 +225,7 @@ footer.dark-mode {
     }
 
     .table{
+        display: flex;
         flex-wrap: wrap;
     }
     
