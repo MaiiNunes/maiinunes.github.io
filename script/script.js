@@ -4,7 +4,7 @@ function changeMode() {
 }
 
 function changeClasses() {
-	button.classList.toggle(darkModeClass);
+	buttonMode.classList.toggle(darkModeClass);
     header.classList.toggle(darkModeClass);
 	body.classList.toggle(darkModeClass);
     aside.classList.toggle(darkModeClass);
@@ -14,22 +14,22 @@ function changeClasses() {
 
 
 function changeText() {
-	const lightMode = 'Light Mode';
-	const darkMode = 'Dark Mode';
+	const lightMode = '<img id="icon-cat" src="/img/icons/cat_b.png"> Light mode';
+	const darkMode = '<img id="icon-cat" src="/img/icons/cat_w.png"> Dark mode';
 
 	if (body.classList.contains(darkModeClass)) {
-		button.innerHTML = lightMode;
+		buttonMode.innerHTML = lightMode;
 		return;
 	}
-	button.innerHTML = darkMode;
+	buttonMode.innerHTML = darkMode;
 }
 
 const darkModeClass = 'dark-mode';
-const button = document.getElementById('mode-selector');
+const buttonMode = document.getElementById('mode-selector');
 const header = document.getElementsByTagName('header')[0];
 const body = document.getElementsByTagName('body')[0];
 const aside = document.getElementsByTagName('aside')[0];
 const main = document.getElementsByTagName('main')[0];
 const footer = document.getElementsByTagName('footer')[0];
 
-button.addEventListener('click', changeMode);
+buttonMode.addEventListener('click', changeMode);

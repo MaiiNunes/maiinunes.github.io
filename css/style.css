@@ -59,16 +59,16 @@ nav{
 }
 
 button {
-    display: block;
-    white-space: nowrap;
-    margin: 5px 10px;
+    display: flex;
+    margin: 10px;
     align-items: center;
+    text-align: center;
+    justify-content: space-around;
 	border-radius: 40px;
     border: .1px solid #bbadff25;
     box-shadow: 0 0 15px #bbadff;
     font-family:'El Messiri','Times New Roman';
 	font-size: 18px;
-    justify-content: center;
 	color: #e5e8e8;
 	transition: all 0.5s linear;
 }
@@ -78,14 +78,15 @@ button.dark-mode {
     font-weight: bold;
 }
 button.dark-mode:hover {
-	background-color: #4e545c;
+	background-color: #646b74;
 	color: #e5e8e8;
 }
 
 .btn-mod{
     background-color: #141124ab;
+    font-size: 19px;
   	height: 30px;
-	width: 110px;  
+	width: 130px;  
 }
 .btn-mod:hover {
 	background-color: #000401;
