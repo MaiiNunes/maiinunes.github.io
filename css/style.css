@@ -203,15 +203,16 @@ main.dark-mode{
     padding: 0 20px;
     margin: auto;
     min-height: 10px;
+    height: 40px;    
 }
 
 footer{
     background-color: #a0aad95b;
-    display: flex;
-    height: 40px;
     color: #2e3657b2;
     font-family:'El Messiri','Times New Roman';
     font-size: 15px;
+    flex: 1;
+    display: flex;
 }
 
 footer.dark-mode {
