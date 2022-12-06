@@ -17,22 +17,18 @@ a{
 
 .flex-container{
     display: flex;
-    flex-basis: auto;
-    min-width: auto;
-    min-height: 100vh;
+    max-width: auto;
+    min-width: 320px;
     width: 100%; 
 }
 
 header{
-    display: flex;
-    justify-content: space-between; 
+    display: inline;
     background: linear-gradient(#8055B4 , #8C78D9);
     border-bottom: .1px solid #ab96ffab;
     box-shadow: 0 0 15px #bbadff;
     font-family:'El Messiri','Times New Roman';
     font-size: 25px;
-
-    gap: 8rem;
     position: fixed;
     width: 100%;
 }
@@ -52,12 +48,23 @@ nav{
 }
 
 .ul-nav{
-    position: relative;
+    display: flex;  
+    justify-content: space-between;  
     color: #D6C2FF;
     text-shadow: 2px 3px 3px #301b55;
-    display: flex;
     list-style: none;
-    gap: 8rem;
+    gap: 5rem;
+}
+
+.btn-mod{
+    display: flex;
+    background-color: #141124ab;
+    font-size: 19px;
+  	height: 30px;
+	width: 130px;  
+}
+.btn-mod:hover {
+	background-color: #000401;
 }
 
 button {
@@ -85,23 +92,12 @@ button.dark-mode:hover {
 	color: #e5e8e8;
 }
 
-.btn-mod{
-    background-color: #141124ab;
-    font-size: 19px;
-  	height: 30px;
-	width: 130px;  
-}
-.btn-mod:hover {
-	background-color: #000401;
-}
-
 
 aside, main{
     display: flex;
     flex-direction: column;
     color: #141124f1;
     margin: 70px 15px;
-    padding: 3px;
     gap: 1rem;
 }
 
@@ -155,16 +151,10 @@ h3{
 	background-color: #bbcef7;
 }
 
-.ul-aside{
-    list-style: none;
-    padding-left: 15px;
-}
-
 main{
     display: flex;
     flex: 1;
     flex-direction: column;
-    width: 100%;
 }
 main.dark-mode{
     color: #edeaff;
@@ -176,8 +166,7 @@ main.dark-mode{
     text-shadow: 2px 3px 2px #9782fd;
     font-size: 70px;
     align-items: center;
-    justify-content:flex-start;
-    gap: 8rem;
+    gap: 2rem;
 }
 
 .photo{
@@ -188,7 +177,7 @@ main.dark-mode{
     padding-bottom: .5px;
 }
 
-.about, .skills, .more {
+.about, .certf, .more {
     font-family:'El Messiri','Times New Roman';
     text-shadow: 1px 1px 1px #9782fd9f;
     font-size: 20px;
@@ -204,8 +193,6 @@ main.dark-mode{
     align-items: center;
     display: flex;
     padding: 0 20px;
-    margin: auto;
-    min-height: 10px;
     height: 40px;    
 }
 
@@ -214,8 +201,6 @@ footer{
     color: #2e3657b2;
     font-family:'El Messiri','Times New Roman';
     font-size: 15px;
-    flex: 1;
-    display: flex;
 }
 
 footer.dark-mode {
@@ -225,20 +210,16 @@ footer.dark-mode {
 
 
 /* mobile */
-@media(max-width:750px){
+@media(max-width:992px){
 
     .flex-container{
         flex-direction: column;
+        margin: auto;
     }
 
-    header{
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        max-width: 750px;
-        min-width: 320px;
-    }
 
-    #menu{
+/*
+    {
       flex-direction: column;
       text-align: center;
       align-items: center;
@@ -247,7 +228,7 @@ footer.dark-mode {
       width: 100%;
       margin-bottom: 20%;
     }
-
+*/
     
 
   }
