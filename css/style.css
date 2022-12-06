@@ -71,7 +71,7 @@ button {
 	font-size: 18px;
 	color: #e5e8e8;
 	transition: all 0.5s linear;
-    cursor: pointer;
+    cursor:pointer;
 }
 button.dark-mode {
 	background-color: #e5e8e8;
