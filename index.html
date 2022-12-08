@@ -10,6 +10,7 @@
         <title>Portifólio May</title>
         <link rel="icon" type="image/x-icon" href="img/icon.png">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap">    
         <link rel="stylesheet" href="css/style.css">       
@@ -17,17 +18,22 @@
     <body>
         <header>
             <nav>
-                <img src="img/maiimay.png" alt="logo" class="logo" width="100" height="46">
-                <ul class="ul-nav">           
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Certifications</li>
-                    <li>Contacts</li>
-                    <li>More</li>
-                </ul>
-                <button class="btn-mod" aria-label="selecionar-modo" id="mode-selector">
-                    <img id="icon-cat" src="/img/icons/cat_w.png" alt="icon Cat white"> Dark mode 
-                </button>
+                <div class=" topnav" id="myTopnav">
+                    <div class="logo-btn">
+                        <img src="img/maiimay.png" alt="logo" class="logo" width="100" height="46">   
+                    </div>          
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#certific">Certifications</a>
+                    <a href="#contact">Contacts</a>
+                    <a href="#more">More</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a> 
+                    <div>
+                        <button class="btn-mod" aria-label="selecionar-modo" id="mode-selector"><img id="icon-cat" src="/img/icons/cat_w.png" alt="icon Cat white"> Dark mode </button>      
+                    </div> 
+                </div>
             </nav>
         </header>
 

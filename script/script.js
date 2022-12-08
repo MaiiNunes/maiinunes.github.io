@@ -33,3 +33,12 @@ const main = document.getElementsByTagName('main')[0];
 const footer = document.getElementsByTagName('footer')[0];
 
 buttonMode.addEventListener('click', changeMode);
+
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+	}
+  }
