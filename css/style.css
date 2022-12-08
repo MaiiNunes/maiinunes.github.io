@@ -44,7 +44,7 @@ nav{
 
 }
 .logo{
-    padding: 1px 0 .5px 20px;
+    padding: 1px 0 .5px 45px;
 }
 
 .ul-nav{
@@ -53,11 +53,12 @@ nav{
     color: #D6C2FF;
     text-shadow: 2px 3px 3px #301b55;
     list-style: none;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
 .btn-mod{
     display: flex;
+    white-space: nowrap;
     background-color: #141124ab;
     font-size: 19px;
   	height: 30px;
@@ -215,8 +216,8 @@ footer.dark-mode {
     .flex-container{
         flex-direction: column;
         margin: auto;
+        align-items: center;
     }
-
 
 /*
     {
@@ -231,4 +232,8 @@ footer.dark-mode {
 */
     
 
-  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
