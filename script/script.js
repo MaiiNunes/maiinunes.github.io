@@ -5,7 +5,6 @@ function changeMode() {
 
 function changeClasses() {
 	buttonMode.classList.toggle(darkModeClass);
-    //header.classList.toggle(darkModeClass);
 	body.classList.toggle(darkModeClass);
     aside.classList.toggle(darkModeClass);
 	main.classList.toggle(darkModeClass);
@@ -33,15 +32,31 @@ function myFunction() {
 	}
 }
 
+//-------- Botão voltar ao topo -----------
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 const darkModeClass = 'dark-mode';
 const buttonMode = document.getElementById('mode-selector');
-//const header = document.getElementsByTagName('header')[0];
 const body = document.getElementsByTagName('body')[0];
 const aside = document.getElementsByTagName('aside')[0];
 const main = document.getElementsByTagName('main')[0];
 const footer = document.getElementsByTagName('footer')[0];
 const menu = document.getElementById('menu');
-
 
 
 menu.addEventListener('click', myFunction);
