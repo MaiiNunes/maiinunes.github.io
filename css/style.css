@@ -25,7 +25,7 @@ a{
 
 /*---------*/
 .logo{
-    margin: 10px 15px;
+    margin: 10px 8px 0 0 ;
 }
 
 .btn-mod{
@@ -46,18 +46,19 @@ a{
     background: linear-gradient(#8055B4 , #8C78D9);
     border-bottom: .1px solid #ab96ffab;
     box-shadow: 0 0 15px #bbadff;
+    padding: 0 18px;
 }
 
 .topnav a {
-    float:left;
-    display: block;
+    float:center;
+    display: inline;
     color: #eee6ff;
     text-shadow: 2px 3px 3px #301b55;
     font-family:'El Messiri','Times New Roman';
     font-size: 25px;
     text-align: center;
     align-items: center;
-    padding: 14px 16px;
+    padding: 10px 40px;
     align-items: center;
     text-decoration: none;
 }
@@ -79,7 +80,7 @@ a{
 /*---------*/
 button {
     display: flex;
-    margin: 10px;
+    margin: 8px;
     align-items: center;
     text-align: center;
     justify-content: space-around;
@@ -224,7 +225,7 @@ footer.dark-mode {
 
 
 /* mobile */
-@media(max-width:992px){
+@media(max-width:800px){
 
     .flex-container{
         flex-direction: column;
@@ -232,7 +233,7 @@ footer.dark-mode {
         align-items: center;
     }
 
-
+    
 /*
     {
       flex-direction: column;
@@ -253,6 +254,10 @@ footer.dark-mode {
     .topnav a.icon {
       float: right;
       display: block;
+    }
+
+    .logo{
+        padding-left: 40%;
     }
 }
   
