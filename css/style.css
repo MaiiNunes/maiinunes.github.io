@@ -132,12 +132,11 @@ aside, main{
     display: flex;
     flex-direction: column;
     color: #141124f1;
-    margin: 70px 15px;
+    margin: 40px 15px;
     gap: 1rem;
 }
 
 aside{
-    margin-top: 80px;
     background:#8F9FCD;
     font-family:'El Messiri','Times New Roman';
     font-size: 20px;
@@ -206,6 +205,7 @@ main.dark-mode{
 }
 
 .photo{
+    margin: 0 25px;
     align-items: center;
     border: .1px solid #cec4ff00;
     box-shadow: 0 0 30px #cec4ff;
@@ -256,6 +256,12 @@ footer.dark-mode {
         align-items: center;
     }
     
+    .photo{
+        margin-left: 40px;
+    }
+    .titulo {
+        text-align: center;
+    }
 }
 
 
