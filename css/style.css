@@ -18,20 +18,17 @@ a{
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 35px;
     right: 20px;
     z-index: 99;
-    font-size: 18px;
-    border: none;
+    border-radius: 20px;
     outline: none;
     background-color: #8F9FCD;
-    color: #eee6ff;
     cursor: pointer;
-    padding: 8px;
-    
-  }
-  
-  #myBtn:hover {
+    padding: 8px 5px 0 5px;
+}
+
+#myBtn:hover {
     background-color: #7F79AD;
 }
 
