@@ -156,6 +156,10 @@ h3{
     text-decoration: underline .5px;
     text-shadow: 1px 1px 1px #9782fd9f;
 }
+.title-h3{
+    padding-bottom: 15px;
+}
+
 .contacts{
     padding-left:20px;
 }
@@ -219,6 +223,16 @@ main.dark-mode{
     border: 2px dotted #b3d3da;
     border-radius: 3px;
     flex: 1;
+}
+
+#link{
+    color:#141124f1;
+    font-weight: bold;
+    text-shadow: 1px .5px 1px #816de2;
+}
+#link.dark-mode{
+    color: #edeaff;
+    text-shadow: 1px .5px 1px #301b55b9;
 }
 
 

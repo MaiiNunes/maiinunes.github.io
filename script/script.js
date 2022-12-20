@@ -8,6 +8,7 @@ function changeClasses() {
 	body.classList.toggle(darkModeClass);
     aside.classList.toggle(darkModeClass);
 	main.classList.toggle(darkModeClass);
+	link.classList.toggle(darkModeClass);
 	footer.classList.toggle(darkModeClass);
 }
 
@@ -53,10 +54,11 @@ function topFunction() {
 const darkModeClass = 'dark-mode';
 const buttonMode = document.getElementById('mode-selector');
 const body = document.getElementsByTagName('body')[0];
+const menu = document.getElementById('menu');
 const aside = document.getElementsByTagName('aside')[0];
 const main = document.getElementsByTagName('main')[0];
+const link = document.getElementById('link');
 const footer = document.getElementsByTagName('footer')[0];
-const menu = document.getElementById('menu');
 
 
 menu.addEventListener('click', myFunction);
