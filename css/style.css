@@ -153,9 +153,12 @@ aside.dark-mode {
 
 h3{
     padding-left: 10px;
-    text-decoration: underline .5px;
     text-shadow: 1px 1px 1px #9782fd9f;
 }
+.img-ctt{
+    margin-top: 8px;
+}
+
 .title-h3{
     padding-bottom: 15px;
 }
@@ -188,13 +191,14 @@ h3{
 
 h4{
     padding-left: 10px;
-    text-shadow: 1px 1px 1px #9782fd9f;  
+    text-shadow: 1px 1px 1px #9782fd9f; 
+    font-style: oblique; 
 }
 
 .link-proj{
     color:#141124f1;
     padding: 15px;
-    text-shadow: 1px .5px 1px #816de2;
+    text-shadow: 1px .5px 1px #baadff;
     text-decoration:underline;
 }
 
@@ -298,17 +302,32 @@ footer.dark-mode {
 /* mobile */
 @media(max-width:768px){
 
+    .topnav {
+        width: 100%;
+    }
+
     .flex-container{
         flex-direction: column;
-        margin: auto;
         align-items: center;
     }
     
-    .photo{
-        margin-left: 40px;
+    aside{
+        display: flex;
+        width: 95%;
+        margin-left: 20px;
+        padding: 0 5px
     }
+    .link-proj{
+        word-break: break-all;
+    }
+    
     .titulo {
+        padding: 0 5px;
         text-align: center;
+    }
+
+    footer{
+        width: 100%;
     }
 }
 
