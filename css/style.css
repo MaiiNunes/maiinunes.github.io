@@ -52,11 +52,14 @@ a{
     background-color: #141124ab;
     font-size: 19px;
     margin-top: 15px;
-  	height: 30px;
+  	height: 35px;
 	width: 130px;  
 }
 .btn-mod:hover {
 	background-color: #000401;
+}
+#icon-cat{
+    padding-top: 2.5px;
 }
 
 
@@ -330,6 +333,7 @@ footer.dark-mode {
     .topnav a.icon {
       float: right;
       display: block;
+      transition: all 0.5s linear;
     }
 
 }
@@ -340,10 +344,12 @@ footer.dark-mode {
       position: absolute;
       right: 0;
       top: 0;
+      transition: all 0.1s linear;
     }
     .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
+      transition: all 0.1s linear;
     }
 }
