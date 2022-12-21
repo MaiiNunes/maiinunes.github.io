@@ -186,6 +186,19 @@ h3{
 	background-color: #bbcef7;
 }
 
+h4{
+    padding-left: 10px;
+    text-shadow: 1px 1px 1px #9782fd9f;  
+}
+
+.link-proj{
+    color:#141124f1;
+    padding: 15px;
+    text-shadow: 1px .5px 1px #816de2;
+    text-decoration:underline;
+}
+
+
 /*---------*/
 main{
     display: flex;
@@ -214,11 +227,11 @@ main.dark-mode{
     padding-bottom: .5px;
 }
 
-.about, .certf, .projects, .more {
+.about, .certf, .more {
     font-family:'El Messiri','Times New Roman';
     text-shadow: 1px 1px 1px #9782fd9f;
     font-size: 20px;
-    padding: 10px;
+    padding: 12px;
     box-shadow: 0 0 25px #cec4ff;
     border: 2px dotted #b3d3da;
     border-radius: 3px;
@@ -237,13 +250,6 @@ arrumar JS
     color: #edeaff;
     text-shadow: 1px .5px 1px #301b55b9;
 }*/
-
-/*---------*/
-.link-proj{
-    color:#141124f1;
-    text-shadow: 1px .5px 1px #816de2;
-    text-decoration:underline;
-}
 
 
 /*---------*/
@@ -265,6 +271,27 @@ footer{
 footer.dark-mode {
 	background-color: #7980a854;
 	color: #000401;
+}
+
+
+/*---------*/
+::-webkit-scrollbar{
+    background-color: #aec2fdb4;
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #bbadff; 
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdaefa; 
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a580fad0; 
 }
 
 
