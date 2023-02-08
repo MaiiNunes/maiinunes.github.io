@@ -27,11 +27,9 @@ a{
     cursor: pointer;
     padding: 8px 5px 0 5px;
 }
-
 #myBtn:hover {
     background-color: #7F79AD;
 }
-
 
 /*---------*/
 .flex-container{
@@ -50,10 +48,10 @@ a{
 .btn-mod{
     display: inline;
     background-color: #141124ab;
-    font-size: 19px;
-    margin-top: 15px;
-  	height: 35px;
-	width: 130px;  
+    font-size: 20px;
+  	height: 40px;
+	width: 150px;
+      
 }
 .btn-mod:hover {
 	background-color: #000401;
@@ -69,31 +67,34 @@ a{
     background: linear-gradient(#8055B4 , #8C78D9);
     border-bottom: .1px solid #ab96ffab;
     box-shadow: 0 0 15px #bbadff;
-    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .topnav a {
     float:center;
-    display: inline;
     color: #eee6ff;
     text-shadow: 2px 3px 3px #301b55;
     font-family:'El Messiri','Times New Roman';
     font-size: 25px;
-    text-align: center;
-    align-items: center;
+    justify-content: space-between;
     padding: 10px 30px 8px 30px;
-    align-items: center;
     text-decoration: none;
 }
 
 .topnav a:hover {
     background-color: #bbadff;
+    border-radius: 15%;
     color: #000401;
 }
   
 .topnav a.active {
     background-color: #8055B4;
     color: #e3d7fc;
+    border-radius: 15%;
 }
   
 .topnav .icon {
@@ -103,12 +104,11 @@ a{
 /*---------*/
 button {
     display: flex;
-    margin: 8px;
     align-items: center;
     text-align: center;
     justify-content: space-around;
 	border-radius: 40px;
-    border: .1px solid #bbadff25;
+    border: .5px solid #bbadff25;
     box-shadow: 0 0 15px #bbadff;
     font-family:'El Messiri','Times New Roman';
 	font-size: 18px;
@@ -242,7 +242,6 @@ main.dark-mode{
     box-shadow: 0 0 25px #cec4ff;
     border: 2px dotted #b3d3da;
     border-radius: 3px;
-    flex: 1;
 }
 
 .certfc{
@@ -268,7 +267,6 @@ footer{
     font-size: 15px;
     padding: 0 30px;
 }
-
 footer.dark-mode {
 	background-color: #7980a854;
 	color: #000401;
@@ -280,17 +278,14 @@ footer.dark-mode {
     background-color: #aec2fdb4;
     width: 18px;
 }
-
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #bbadff; 
     border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #bdaefa; 
     border-radius: 8px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #a580fad0; 
 }
@@ -301,6 +296,8 @@ footer.dark-mode {
 
     .topnav {
         width: 100%;
+        display: list-item;
+        align-items: flex-start;
     }
 
     .flex-container{
@@ -333,6 +330,7 @@ footer.dark-mode {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
+      right: 50px;
       display: block;
       transition: all 0.5s linear;
     }
@@ -343,7 +341,7 @@ footer.dark-mode {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
-      right: 0;
+      right: 50px;
       top: 0;
       transition: all 0.1s linear;
     }
@@ -351,6 +349,7 @@ footer.dark-mode {
       float: none;
       display: block;
       text-align: left;
+      padding-left: 130px;
       transition: all 0.1s linear;
     }
 }
