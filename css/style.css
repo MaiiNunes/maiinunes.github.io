@@ -87,14 +87,14 @@ a{
 
 .topnav a:hover {
     background-color: #bbadff;
-    border-radius: 15%;
+    border-radius: 8%;
     color: #000401;
 }
   
 .topnav a.active {
     background-color: #8055B4;
     color: #e3d7fc;
-    border-radius: 15%;
+    border-radius: 8%;
 }
   
 .topnav .icon {
