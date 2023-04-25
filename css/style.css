@@ -72,6 +72,7 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .topnav a {
@@ -81,20 +82,18 @@ a{
     font-family:'El Messiri','Times New Roman';
     font-size: 25px;
     justify-content: space-between;
-    padding: 10px 30px 8px 30px;
+    padding: 10px 25px 8px 25px;
     text-decoration: none;
 }
 
 .topnav a:hover {
     background-color: #bbadff;
-    border-radius: 8%;
     color: #000401;
 }
   
 .topnav a.active {
     background-color: #8055B4;
     color: #e3d7fc;
-    border-radius: 8%;
 }
   
 .topnav .icon {
@@ -145,6 +144,7 @@ aside{
     border-radius: 3px;
     box-shadow: 0 0 25px #bbc7fa;
     flex-basis: 30%;
+    padding: 10px 0 0 15px;
 }
 aside.dark-mode {
 	background-color: #7F79AD;
@@ -157,6 +157,12 @@ aside.dark-mode {
 h3{
     padding-left: 10px;
     text-shadow: 1px 1px 1px #9782fd9f;
+}
+p{
+    padding-left: 20px;  
+}
+.margin{
+    padding-left: 45px;
 }
 .img-ctt{
     margin-top: 8px;
@@ -173,6 +179,7 @@ h3{
 .table{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 25px;
 }
 
 .btn-aside{
@@ -182,7 +189,7 @@ h3{
     justify-content: space-between;
     text-decoration: none;
     background:#aec2fd;
-    padding: 5px 15px;
+    padding: 5px 18px;
     height: 30px;
 	width: 150x; 
     gap: 3px;
@@ -234,7 +241,7 @@ main.dark-mode{
     padding-bottom: .5px;
 }
 
-.about, .certf, .more {
+.about, .graduac, .projects, .more {
     font-family:'El Messiri','Times New Roman';
     text-shadow: 1px 1px 1px #9782fd9f;
     font-size: 20px;
@@ -265,7 +272,6 @@ footer{
     color: #2e3657b2;
     font-family:'El Messiri','Times New Roman';
     font-size: 15px;
-    padding: 0 30px;
 }
 footer.dark-mode {
 	background-color: #7980a854;
@@ -291,8 +297,8 @@ footer.dark-mode {
 }
 
 
-/* mobile */
-@media(max-width:768px){
+/* tablets */
+@media(max-width:1025px){
 
     .topnav {
         width: 100%;
@@ -325,7 +331,7 @@ footer.dark-mode {
     }
 }
 
-
+/* mobile */
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
